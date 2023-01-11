@@ -1,12 +1,24 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map, Observable } from 'rxjs';
+import { BehaviorSubject, map, Observable } from 'rxjs';
 import { Item, Result } from '../models/item.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
+    
+  public currentItem: BehaviorSubject<Item> = new BehaviorSubject<Item>(    {
+    "id": "0",
+    "title": "Note Start",
+    "text": "Text Start",
+    "tags": [
+      "angular",
+      "javascript",
+      "rxjs"
+    ]
+  });
+        
   private source = 'assets/list.json';
 
   constructor(private http: HttpClient) {}

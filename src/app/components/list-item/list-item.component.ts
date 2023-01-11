@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Item } from 'src/app/models/item.model';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-list-item',
@@ -9,10 +10,13 @@ import { Item } from 'src/app/models/item.model';
 export class ListItemComponent {
   @Input() public item!: Item;
 
+  constructor(
+    private dataService: DataService,
+  ) {}
+
   public showDetail(): void {
-    let path = null;
-    if (this.item && this.item.id) {
-      path = this.item.id;
+    if (this.item) {
+      this.dataService.currentItem.next(this.item);
     }
   }
 }

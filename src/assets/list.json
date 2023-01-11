@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Note 1",
       "text": "Text 1",
       "tags": [
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Note 2",
       "text": "Text 2",
       "tags": [
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Note 3",
       "text": "Text 3",
       "tags": [
