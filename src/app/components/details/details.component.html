@@ -1,11 +1,11 @@
 <mat-card *ngIf="(item$ | async) as item ">
     <mat-card-title>{{ item.title }}</mat-card-title>
-  
+
     <mat-card-content>
         {{ item.text }}
     </mat-card-content>
-  
+
     <mat-card-actions>
         {{ item.tags }}
     </mat-card-actions>
-  </mat-card>
+</mat-card>

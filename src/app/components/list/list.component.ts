@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { map, Observable, switchMap } from 'rxjs';
 import { Item } from 'src/app/models/item.model';
 import { DataService } from 'src/app/services/data.service';
 
@@ -16,12 +16,8 @@ export class ListComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.items$ = 
-        this.dataService.getData().pipe(
-          map((data) =>  {
-            console.log(data.items);
-            return data.items;
-          }
-    ));
+    this.items$ = this.dataService.searchParameter.pipe(
+      switchMap((param) => this.dataService.getData(param))
+    )
   }
 }

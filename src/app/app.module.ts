@@ -9,6 +9,7 @@ import { DetailsComponent } from './components/details/details.component';
 import { ListItemComponent } from './components/list-item/list-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MaterialModule } from './material/material.module';
     HomeComponent,
     ListComponent,
     DetailsComponent,
-    ListItemComponent
+    ListItemComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

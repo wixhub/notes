@@ -1,15 +1,15 @@
 <mat-card>
-    <mat-card-title>{{ item.title }}</mat-card-title>
+  <mat-card-title>{{ item.title }}</mat-card-title>
+
+  <mat-card-content>
+      {{ item.text }}
+  </mat-card-content>
+
+  <div>{{ item.tags }}</div>
   
-    <mat-card-content>
-        {{ item.text }}
-    </mat-card-content>
-  
-    <div>{{ item.tags }}</div>
-    
-    <mat-card-actions>
-      <button mat-raised-button class="more-button" (click)="showDetail()">
-        more...
-      </button>
-    </mat-card-actions>
-  </mat-card>
+  <mat-card-actions>
+    <button mat-raised-button (click)="showDetail()">
+      Details
+    </button>
+  </mat-card-actions>
+</mat-card>

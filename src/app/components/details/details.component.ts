@@ -18,10 +18,6 @@ export class DetailsComponent implements OnInit {
   ngOnInit(): void {
     this.item$ = 
         this.dataService.currentItem.pipe(
-          map((data) =>  {
-            console.log(data);
-            return data;
-          }
-    ));
+          map((data) => data));
   }
 }

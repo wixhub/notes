@@ -5,17 +5,20 @@
   }
   
   mat-card {
-    height: 120px;
-    width: 220px;
+    height: 140px;
+    width: 240px;
     border-radius: 5px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     text-align: center;
-  
     background-color: #e5e5e5;
     border-bottom-style: solid;
     border-bottom-width: 5px;
     box-shadow: 2px 2px 4px 0px #00000040;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  mat-card-actions {
+    justify-content: center;
   }

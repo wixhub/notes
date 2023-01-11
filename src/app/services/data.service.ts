@@ -18,20 +18,24 @@ export class DataService {
       "rxjs"
     ]
   });
+
+  public searchParameter: BehaviorSubject<string> = new BehaviorSubject<string>('');
         
   private source = 'assets/list.json';
 
   constructor(private http: HttpClient) {}
 
-  public getData(): Observable<Result> {
-    return this.http.get<Result>(this.source);
-  }
-
-  public getItemById(id: string): Observable<Item | null> {
-    return this.getData().pipe(
+  public getData(query: string): Observable<Item[]> {
+    return this.http.get(this.source).pipe(
       map(
-        (response) =>
-          response.items.filter((item) => item.id == id)[0] ?? null
+        (result) =>
+         {
+          const res = result as Result;
+          if (query) {
+            return res.items.filter((item) => item.title.includes(query) || item.text?.includes(query));
+          }
+            return res.items;
+         }
       )
     );
   }

@@ -1,22 +1,21 @@
 :host {
-    display: flex;
-    flex-flow: row wrap;
-    box-sizing: border-box;
-    background-color: #e5e5e5;
-    color: #929292;
-  }
-  
-  .left {
-    width: 30%;
-  }
-  
-  .center {
-    align-items: start;
-    justify-content: start;
-    padding: 14px 0 15px;
-    width: 600px;
-  
-    app-search-sorting {
-      margin-left: -10px;
-    }
-  }
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-flow: row;
+}
+
+.left {
+  width: 30%;
+}
+
+.center {
+  align-items: start;
+  justify-content: start;
+  padding: 14px 0 15px;
+  width: 600px;
+}
