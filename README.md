@@ -1,0 +1,2 @@
+# notes
+Angular project
