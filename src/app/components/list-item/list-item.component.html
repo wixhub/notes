@@ -1,0 +1,14 @@
+<mat-card>
+    <mat-card-title>{{ item.title }}</mat-card-title>
+  
+    <mat-card-content>
+        {{ item.text }}
+    </mat-card-content>
+  
+    <mat-card-actions>
+        {{ item.tags }}
+      <button mat-raised-button class="more-button" (click)="showDetail()">
+        more...
+      </button>
+    </mat-card-actions>
+  </mat-card>

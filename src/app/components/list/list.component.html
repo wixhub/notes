@@ -1,0 +1,9 @@
+<ng-container *ngIf="items$ | async as items"
+  ><ng-container *ngIf="items.length > 0; else noData">
+    <app-list-item
+      *ngFor="let item of items"
+      [item]="item"
+    ></app-list-item>
+  </ng-container>
+  <ng-template #noData>No Data</ng-template>
+</ng-container>
