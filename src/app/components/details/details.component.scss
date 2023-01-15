@@ -5,8 +5,8 @@
   }
   
   mat-card {
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     border-radius: 5px;
     box-sizing: border-box;
     display: flex;
@@ -33,7 +33,7 @@
   
   mat-card-content {
     display: flex;
-    height: 500px;
+    height: 400px;
     justify-content: space-between;
     font-family: "Roboto";
     font-style: normal;

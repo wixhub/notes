@@ -1,0 +1,42 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background: #1C2128;
+    width: 260px;
+    height: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+  }
+
+  .content {
+    padding-left: 20px;
+
+    input {
+        text-indent: 5px;
+        border: none;
+        background-color: #161B22;
+        color: #fff;
+      }
+      
+      textarea {
+        text-indent: 5px;
+        background-color: #161B22;
+        color: #fff;
+      }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    button[type="submit"]:enabled {
+    color: #fff;
+    background-color: #228EC4;
+    }
+  }
+
+  

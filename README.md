@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
 
+Used Angular Material and SCSS 
+
+# Content
+
+Show an overview of all notes on the left  
+Display an editor in the right pane to read the details of the note  
+Able to search the notes in the content and in the title  
+A note has:  
+o A headline   
+o Text content  
+o Tags (several)  
+Being able to create a new note  
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
